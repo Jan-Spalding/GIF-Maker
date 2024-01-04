@@ -1,0 +1,13 @@
+=== ADD ===
+- Add save and load system 
+- Add upload image into transparent layer 
+- Preview the gif before saving 
+- add function to hover thumbnail 
+- Help button 
+- Eraser
+- Background colours 
+- Bucket fill or other functions 
+
+
+=== Fix ===
+- Deleting first canvas

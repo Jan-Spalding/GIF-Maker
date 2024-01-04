@@ -1,0 +1,290 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#page {
+  position:absolute;
+  height:100%;
+  width:100%;
+  background-color:gray;
+  overflow-y: hidden;
+  overflow-x:hidden;
+}
+
+#footer {
+  position:absolute;
+  height:150px;
+  width:100%;
+  border-top: 2px solid black;
+  bottom:0;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:2;
+}
+
+#thumbnail {
+  position:absolute;
+  height:150px;
+  width: calc(100% - 150px);
+  background-color:#3A506B;
+  left:0;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+
+#fbutton {
+  position: absolute;
+  height:100%;
+  width:150px;
+  right:0;
+  border-left: 2px solid black;
+  background-color: #3A506B;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+#fbutton button {
+  height:80px;
+  width: 80px;
+  margin-top:10px;
+}
+
+.newFrame {
+  position: relative;
+  border: 2px solid black;
+  height: 100px;
+  width: 200px;
+  margin: 5px;
+  background-color:#E8E9F3;
+  display:inline-block;
+}
+
+.buttonHolder {
+  position:absolute;
+  height:100%;
+  width:100%;
+  display:none;
+  justify-content: space-evenly;
+  align-items: end;
+  background-color:black;
+  opacity:0.5;
+  z-index:1;
+  
+}
+
+.buttonHolder button {
+    margin-bottom: 20px;  
+}
+
+#target {
+  position: absolute;
+  right:0;
+  height: calc(100% - 150px);
+  width: calc(100% - 50px);
+  background-color: #0B132B;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.canvas {
+  border: 2px solid black;
+  display:none;
+}
+
+.thumbnail {
+  position:relative;
+  height:100%;
+  width:100%;
+}
+
+.thumbnailHolder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100%;
+  width:100%;
+}
+
+#settings {
+  position:absolute;
+  left:0;
+  height: calc(100% - 150px);
+  width: 50px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content: center;
+  z-index:1;
+  background-color:#3A506B;
+  border-right:2px solid black;
+}
+
+#settings input {
+  width:40px;
+}
+
+.transparent {
+  position:absolute;
+  opacity: 0.5;
+  height: 150px;
+  width: 300px;
+}
+
+#slideHolder {
+  position:fixed;
+  top:50%;
+  left:1%;
+  height:50px;
+  width:150px;
+  background-color:white;
+  display:none;
+  justify-content:center;
+  align-items:center;
+  border-radius: 5%;
+  z-index:5;
+  flex-direction:column
+}
+
+#slideHolder p {
+  margin: 0;
+}
+
+#previewHolder {
+  position:absolute;
+  height:100%;
+  width:100%;
+  display:none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 5;
+}
+
+#preview {
+  position: absolute;
+  height:90%;
+  width:90%;
+  border:2px solid black;
+  background-color:white;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+}
+
+#window {
+  position: relative;
+  height:90%;
+  width:90%;
+  background-color:black;
+  margin-left: 3%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#window img {
+  position:absolute;
+}
+
+#previewSettings {
+  position: relative;
+  height:100%;
+  width:80%;
+  margin-left:3%;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+button {
+  border:none;
+  background-color:  #E8E9F3;
+  transition-duration:0.4s;
+  color: #1C2541;
+  border-radius: 4px;
+  box-shadow: 2px 2px black;
+  cursor:pointer;
+}
+
+button:hover {
+  background-color: #1C2541;
+  color: #E8E9F3;
+}
+
+#brushColor {
+  opacity: 0;
+}
+
+#brushColorHolder {
+  background-color: #E8E9F3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  box-shadow: 2px 2px black;
+  border-radius: 4px;
+  transition-duration:0.4s;
+}
+
+#brushColorHolder:hover {
+  background-color:#1C2541;
+}
+
+#brushColorHolder i {
+  position: absolute;
+}
+
+#uploadTrans {
+  opacity: 0;
+}
+
+#uploadTransHolder {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 2px 2px black;
+  cursor:pointer;
+  background-color: #E8E9F3;
+  color:#1C2541;
+}
+
+#uploadTransHolder:hover {
+  background-color: #1C2541;
+  color: #E8E9F3;
+}
+
+#uploadTransHolder i {
+  position: absolute;
+}
+
+#load {
+  opacity:0;
+}
+
+#loadHolder {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-color: #E8E9F3;
+  border-radius: 4px;
+  box-shadow: 2px 2px black;
+  color:#1C2541;
+}
+
+#loadHolder:hover {
+  background-color: #1C2541;
+  color: #E8E9F3;
+}
+
+#loadHolder p {
+  position:absolute;
+}
