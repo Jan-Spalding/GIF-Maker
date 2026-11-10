@@ -16,7 +16,7 @@ An upload button is present for the user to place an image of their choice over 
 
 Using a stack data structure I was able to make a CTRL + Z feature to undo any mistakes as well as a CTRL + Y redo function.
 
-You can download your project as a JSON meaning you can come back at any time to complete it. 
+You can download your project as a JSON and then load the JSON whenever to resume drawing.
 
 Once the user is ready then they can export their image. Using a Library to help with exporting, the GIF can be downloaded to then be shared.
 
