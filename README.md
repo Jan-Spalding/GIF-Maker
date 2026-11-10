@@ -1,6 +1,6 @@
 # GIF Maker
 
-https://raw.githubusercontent.com/Jan-Spalding/GIF-Maker/refs/heads/main/GIF%20Thumbnail.png 
+<img src="https://raw.githubusercontent.com/Jan-Spalding/GIF-Maker/refs/heads/main/GIF%20Thumbnail.png">
 
 ### Description
 A personal project where I wanted to make my own small gifs to then sent around. Using a HTML canvas, it allows the user to draw anything they want.
@@ -20,7 +20,7 @@ You can download your project as a JSON meaning you can come back at any time to
 
 Once the user is ready then they can export their image. Using a Library to help with exporting, the GIF can be downloaded to then be shared.
 
-https://raw.githubusercontent.com/Jan-Spalding/GIF-Maker/refs/heads/main/I%20love%20computer%20science.gif 
+<img src="https://raw.githubusercontent.com/Jan-Spalding/GIF-Maker/refs/heads/main/I%20love%20computer%20science.gif"> 
 
 ### Usage 
 Visit the website https://jan-spalding.github.io/GIF-Maker/ to start using.
